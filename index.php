@@ -18,7 +18,7 @@ require 'conexion/sesion.php';
 </head>
 
 <body style="margin-left: 10%;">
-  <h1 style="color: red">Welcome to SOL</h1>
+  <h1 style="color: red">Benvido ao SOL</h1>
   <br><br>
 
   <a href="persoas/index.php">Index Persoas</a><br>

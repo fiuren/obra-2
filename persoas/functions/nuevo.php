@@ -26,18 +26,19 @@ require '../../conexion/sesion.php';
   <div class="t-container">
 
     <ul class="t-tabs">
-      <li class="t-tab">Datos Personales</li>
+      <li class="t-tab">Datos Personais</li>
       <li class="t-tab">Formación</li>
       <li class="t-tab">Experiencia</li>
-      <li class="t-tab">Acciones</li>
+      <li class="t-tab">Accións</li>
       <li class="t-tab">Ofertas</li>
       <li class="t-tab"><a href="../../login/logout.php">Saír da sesión</a></li>
     </ul>
 
     <ul class="t-contents">
-      <h3 class="p-5 text-center">NOVO REXISTRO</h3>
+
       <li class="t-content">
         <!-- <p>Contenido Datos</p> -->
+        <h4 class="p-5 text-left">Novo Rexistro</h4>
 
         <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
           <div class="col-md-4">
@@ -101,116 +102,8 @@ require '../../conexion/sesion.php';
               <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico">
             </div>
           </div>
-        </form>
 
-      </li>
-
-      <li class="t-content">
-        <p>FORMACION</p>
-
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
-          <div class="col-md-4">
-            <label for="nome" class=" control-label">Formacion Reglada:</label>
-            <div class="col-sm-10">
-              <select class="form-control" id="" name="">
-                <option value="text">Bacharelato</option>
-                <option value="text">COU</option>
-                <option value="text">ESO</option>
-                <option value="text">Universidade</option>
-              </select>
-              <select class="form-control" id="" name="">
-                <option value="text"></option>
-                <option value="text">Doutorado</option>
-                <option value="text">Grao</option>
-                <option value="text">Máster</option>
-              </select>
-              <select class="form-control" id="" name="">
-                <option value=""></option>
-                <option value="text">Administración e Empresas</option>
-                <option value="text">Educación Primaria</option>
-                <option value="text">Ciencias Medioambientáis</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="fp" class=" control-label">Formacion Profesional:</label>
-            <div class="col-sm-10">
-              <select class="form-control" id="" name="">
-                <option value="text">Superior</option>
-                <option value="text">Certificados de Profesionalidade</option>
-                <option value="text">Media</option>
-                <option value="text">Básica</option>
-              </select>
-              <select class="form-control" id="" name="">
-                <ol type="A">
-                  <option value=""></option>
-                  <option value="text">Administración e Xestión</option>
-                  <option value="text">Enerxía e Auga</option>
-                  <option value="text">Imaxe Persoal</option>
-                  <option value="text">Informática e Comunicaións</option>
-                  <option value="text">Madeira, moble e corcho</option>
-                </ol>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="segundo_apelido" class="control-label">Formación Complementaria:</label>
-            <div class="col-sm-10">
-
-
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="nif" class=" control-label">DNI / NIF:</label>
-            <div class="col-sm-10">
-              <input type="tel" class="form-control" id="nif" name="nif" placeholder="Número do DNI" pattern="[0-9]{8}+[A-Z]{1}" maxlength="9" required>
-            </div>
-          </div>
-
-
-          <div class="col-md-4">
-            <label for="sexo" class="control-label">Idioma</label>
-            <div class="col-sm-10">
-              <select class="form-control" id="sexo" name="sexo" placeholder="Selecione o nivel">
-                <option value=""></option>
-                <option value="MULLER">Galego</option>
-                <option value="OUTRO">Castelán</option>
-                <option value="MULLER">Inglés</option>
-                <option value="OUTRO">Francés</option>
-                <option value="MULLER">Alemán</option>
-                <option value="OUTRO">Italianini</option>
-              </select>
-              <select class="form-control" id="sexo" name="sexo" placeholder="curso">
-                <option value="text">Curso</option>
-                <option value="text">CELGA3</option>
-                <option value="text">CELGA4</option>
-                <option value="text">CELGA5</option>
-                <option value="text">B1</option>
-                <option value="text">B2</option>
-                <option value="text">C1</option>
-                <option value="text">C2</option>
-                <option value="text">Nativo</option>
-                
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="checkbox">
-                  <label class="form-check-label" for="defaultCheck1">
-                    Viviu no estranxeiro </label>
-                </div>
-                <div class="form-check">
-                  <p>Homologado</p>
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> Si
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> Non
-                </div>
-
-                <div class="input-group">
-                  <span class="input-group-text">Notas</span>
-                  <textarea class="form-control" aria-label="With textarea"></textarea>
-                </div>
-              </select>
-            </div>
-          </div>
-
-          <br> <br> <br>
+          <br>
           <br>
           <div class="col-md-4">
             <div class="">
@@ -219,15 +112,216 @@ require '../../conexion/sesion.php';
             </div>
           </div>
         </form>
+
+      </li>
+
+      <li class="t-content">
+      <h4 class="p-5 text-left">Contido Formación</h4>
+
+        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+          <div class="col-md-4">
+            <label for="estudo" class="control-label">Estudos Básicos</label>
+            <div class="col-md-4">
+              <select class="form-control" id="estudos" name="estudos">
+                <option value="text"></option>
+                </option>
+
+                <option value="ESO">E.S.O</option>
+                <option value="COU">C.O.U</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="superiores" class="control-label">Estudos Superiores</label>
+            <div class="col-md-4">
+              <select class="form-control" id="superiores" name="superiores">
+                <option value="text"></option>
+                <option value="uni">Universitarios</option>
+                <option value="nouni">Non Universitarios</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="universitarios" class="control-label">Universitarios</label>
+            <div class="col-md-4">
+              <select class="form-control" id="universitarios" name="universitarios">
+                <option value="text"></option>
+                <option value="grao">Grao</option>
+                <option value="master">Master</option>
+                <option value="master">Doutorado</option>
+
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="non-universitarios" class="control-label">Non Universitarios</label>
+            <div class="col-md-4">
+              <select class="form-control" id="non-universitarios" name="nonuniversitarios">
+                <option value="text"></option>
+                <option value="bacharelato">Bacharelato</option>
+                <option value="formacion-profesional">Formación Profesional</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="fp" class="control-label">Formación Profesional</label>
+            <div class="col-md-4">
+              <select class="form-control" id="formacion" name="formacion">
+                <option value="text"></option>
+                <option value="superior">Superior</option>
+                <option value="media">Media</option>
+                <option value="basica">Básica</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="familias" class="control-label">Familias profesionais</label>
+            <div class="col-md-4">
+              <select class="form-control" id="familias" name="familias">
+                <option value="text"></option>
+                <option value="informatica">Informática e comunicacións</option>
+                <option value="admin">Administración e Xestión</option>
+                <option value="madeiera">Madeira, moble e corcho</option>
+                <option value="auga">Enerxía e auga</option>
+                <option value="imaxe">Imaxe persoal</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="complementaria" class="control-label">Formación Complementaria</label>
+            <div class="col-md-4">
+              <select class="form-control" id="complementaria" name="complementaria">
+                <option value="text"></option>
+                <option value="certificados">Certificados Oficiais</option>
+                <option value="curso">Curso Manipulador de Alimentos</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <label for="idiomas" class="control-label">Idiomas</label>
+            <div class="col-md-4"></div>
+            <select class="form-control" id="idiomas" name="idiomas">
+              <optgroup label="Niveis">
+                <option value="text"></option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+              </optgroup>
+            </select>
+
+            <select class="form-control" id="idiomas" name="idiomas">
+              <optgroup label="Curso">
+                <option value="text"></option>
+                <option value="text">Cambridge</option>
+                <option value="text">Oxford</option>
+              </optgroup>
+            </select>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="checkbox">
+              <label class="form-check-label" for="defaultCheck1">
+                Viviu no estranxeiro </label>
+            </div>
+            <div class="form-check">
+              <p>Homologado</p>
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> Si
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> Non
+            </div>
+            <div class="col-md-4">
+              <div class="">
+                <a href="../index.php" class="btn btn-default">VOLTAR</a>
+                <button type="submit" class="btn btn-primary">GARDAR</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="familias" class="control-label">Notas e consideracións</label>
+            <div class="col-md-4">
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+          </div>
+        </form>
+
       </li>
       <li class="t-content">
-        <p>Contenido Experiencia</p>
+      <h4 class="p-5 text-left">Contido Experiencia</h4>
+
       </li>
       <li class="t-content">
-        <p>Contenido Acciones</p>
+      <h4 class="p-5 text-left">Contido Accións</h4>
+
+        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+          <div class="col-md-4">
+            <label for="data_nacemento" class="control-label">Data da 1ª entrevista</label>
+            <div class="col-sm-10">
+              <input type="date" class="form-control" id="data_entrevista" name="data_entrevista" placeholder="dd-mm-aa" required>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="orientador" class="control-label">Orientador/a</label>
+            <div class="col-sm-10">
+              <select class="form-control" id="orientador" name="orientador">
+                <option value="">Cea Rodríguez, Alberte</option>
+                <option value="">García Barbosa, Eva</option>
+                <option value="">De Monasterio Roldan, Celia</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="canle" class="control-label">Canle de acceso</label>
+            <div class="col-sm-10">
+              <select class="form-control" id="canle" name="canle">
+                <option value="">Web</option>
+                <option value="">Física</option>
+                <option value="">Por contacto</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="canle" class="control-label">Seguemento</label>
+            <div class="col-sm-10">
+              <select class="form-control" id="canle" name="canle">
+                <option value="">Web</option>
+                <option value="">Física</option>
+                <option value="">Por contacto</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="canle" class="control-label">Accións do SOL</label>
+            <div class="col-sm-10">
+              <select class="form-control" id="canle" name="canle">
+                <option value="">Web</option>
+                <option value="">Física</option>
+                <option value="">Por contacto</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+    <label for="exampleFormControlTextarea1">Notas e consideracións</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+
+          <br>
+          <br>
+          <div class="col-md-4">
+            <div class="">
+              <a href="../index.php" class="btn btn-default">VOLTAR</a>
+              <button type="submit" class="btn btn-primary">GARDAR</button>
+            </div>
+          </div>
+        </form>
+
       </li>
       <li class="t-content">
-        <p>Contenido Ofertas</p>
+      <h4 class="p-5 text-left">Contido Ofertas</h4>
+
+
       </li>
     </ul>
   </div>
